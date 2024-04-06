@@ -9,3 +9,9 @@ def home():
 @app.get("/about")
 def home():
     return {"message": "This is a test fastapi project."}
+
+users = []
+
+@app.get("/users")
+def getUsers():
+    return users
